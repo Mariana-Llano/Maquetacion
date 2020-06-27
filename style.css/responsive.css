@@ -56,7 +56,7 @@
 
    
 .operations{
-  text-align: center;
+    text-align: center;
     justify-items: center;
     grid-template-columns: [inicio] 1fr [final];
     grid-template-rows: [inicio] 130px [linea2] 120px [linea3] 1fr [linea4] 1fr [final];
