@@ -1,7 +1,8 @@
 body{
-    
+    font-family: 'Roboto', sans-serif;
 }
 
+/*select the ones that have true value*/
 [class*="subTitle"]{
     text-align: center;
     color:  rgba(95, 33, 230, 1);
@@ -21,25 +22,20 @@ body{
     background-color: white;
     box-shadow: 0px 4px 10px 0px;
     position: fixed;
-    top: 0;
-    
-    
+    top: 0;   
 }
 
-/* division de grillas nav */
+/* grid division nav */
 .list{
     display: grid;
     list-style: none;
-   
     grid-template-columns: [inicio] 1fr [linea2] 1fr [final];
-    grid-template-rows: [inicio] 1fr [final]; 
-   
+    grid-template-rows: [inicio] 1fr [final];    
  }
 
-/* asignacion de grillas nav */
-
 .list__item--logo{
-    align-items: center;
+    height: 90px;
+    align-content: center;
     grid-column: inicio / linea2;
     grid-row: inicio / final;
 }
@@ -49,8 +45,7 @@ body{
     grid-column: linea2 / final;
     grid-row: inicio / final;
     color: rgba(95, 33, 230, 1);
-    font-weight: 700;
-    
+    font-weight: 700;    
 }
 
 /* Hero */
@@ -66,7 +61,6 @@ body{
 }
 
 /* grid description */
-
 .description{
     width: 75%;
     margin: auto;
@@ -81,6 +75,7 @@ body{
     grid-column: inicio / final;
     grid-row: inicio / linea2;
     font-size: 40px;
+    text-align: center;
     color: rgba(95, 33, 230, 1);
     align-self: center;
     justify-self: center;
@@ -93,19 +88,13 @@ body{
     grid-row: linea2 / linea3;
 }
 
-.discription-info{
-    grid-column:  linea2 / final;
-    grid-row: linea3 / final;
-}
-
 .description__img{
     width: 100%;
     height: 100%;
-    grid-column: inicio / linea2;
-    grid-row: linea2 / final;
     align-self: center;
     justify-self: center;
-
+    grid-column: inicio / linea2;
+    grid-row: linea2 / final;
 }
 
 .description-info{
@@ -113,16 +102,14 @@ body{
     grid-row: linea2 / linea3;
 }
 
-
-/* grid requires */
+/* grid required */
 .required{
     width: 75%;
+    height: 445px;
     margin: auto;
     display: grid;
-    height: 445px;
     grid-template-columns: [inicio] 1fr [linea2] 1fr [final];
     grid-template-rows: [inicio] 1fr [linea2] 1fr [linea3] 1fr [final];
-
 }
 
 .required__subTilte{
@@ -130,7 +117,7 @@ body{
     grid-row: inicio / linea2;
 }
 
-.required--text{
+.required-text{
     grid-column: inicio / linea2;
     grid-row: linea2 / final;
 }
@@ -143,27 +130,26 @@ body{
     grid-row: inicio / final;
 }
 
-/* Secction digitar numero */
-.start-num{
+/* enter number */
+.enter-num{
     display: grid;
-    align-items: center;
-    height: 300px;
-    background-color:#04847B;
+    height: auto;
     margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color:#04847B;
     column-gap: center; 
     grid-template-columns: [inicio] 1fr [linea2] 1fr [final];
     grid-template-rows: [inicio] 1fr [linea2] 1fr [linea3] 1fr [linea4]  1fr [final];
-    color: white;
-    font-size: 20px;
 }
 
-
-.start-num__formSubtitle{
-  
+.enter-num__formSubtitle{
     justify-self: center;
     grid-column: inicio / final;
-    grid-row: inicio / linea2;
-    
+    grid-row: inicio / linea2;  
 }
 
 .form{
@@ -172,24 +158,23 @@ body{
     grid-row: linea2 / linea3;
 }
 
-.form__button--yelow{
+.form__botton--yelow{
     justify-self: center;
     width: 100px;
     height: 30px;
     background-color:rgb(231, 231, 84) ;
-    border-radius: 97px;
-    
+    border-radius: 97px;   
 }
 
-.start-num__list{
+.enter-num__list{
     justify-self: center;
     grid-column:  inicio / final;
     grid-row:  linea3 / linea4;
 }
 
-.start-num__listItem{
-    color: rgb(231, 231, 84);
-    justify-self: center;
+.enter-num__listItem{
+    color:  rgb(231, 231, 84);
+    list-style: none;
     grid-column:  inicio / final;
     grid-row:  linea4 / final;
 }
@@ -204,7 +189,6 @@ body{
 }
 
 .operations--menMayor{
-  
     grid-column: inicio / linea2;
     grid-row: inicio / linea2;
 }
@@ -244,7 +228,7 @@ body{
     grid-column: inicio / final;
     grid-row: inicio / linea2;
 }
-.footer--hr{
+.footer__hr{
     width: 85vw;
 }
 .footer-info{
@@ -257,26 +241,21 @@ body{
     text-align: center;
     padding-top: 20px;
     grid-column: linea2 / linea3;
-    grid-row: linea2 / linea3;
-   
+    grid-row: linea2 / linea3;  
 }
 
 .footer-aliados__img{
     margin: auto;
     width: 15%;
     height: 5vh;
-    display: block;
-    
+    display: block;   
 }
 
 .footer-social{
     padding-top: 20px;
-    
     grid-column: linea3 / final;
     grid-row: linea2 / linea3;
 }
-
-
 
 .footer-social__img{
     width: 8%;
@@ -285,17 +264,16 @@ body{
 
 .footer-byFor{
     grid-column: inicio / final;
-    grid-row: linea3 / final;
-   
+    grid-row: linea3 / final;  
 }
 
 .footer-byFor--yelow{
     width: 5%;
-    height: 7vh;
+    height: auto;
     border-radius: 15px;
     background-color: rgb(231, 231, 84);
     position: fixed;
-    bottom: 0;
+    bottom: 8px;
     right: 3%;
 }
 

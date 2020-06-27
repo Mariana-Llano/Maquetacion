@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>finaKtiva</title>
+    <link rel="icon" href="./img/logo.icon">
     <link rel="stylesheet" href="style.css/style.css">
     <link rel="stylesheet" href="style.css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -15,8 +17,8 @@
             <header>
                 <nav class="nav">
                     <ul class="list">
-                        <li class="list__item--logo"><img src="./img/logo.PNG"
-                            class="list__img"
+                        <li class="list__item"><img src="./img/logo.PNG"
+                        class="list__item--logo"
                             width="200px"
                             height="120px"
                             alt="Logo"></li>
@@ -87,8 +89,8 @@
 
         <!--  Enter number-->
             <section>
-              <div class="start-num"> 
-                <h2 class="start-num__formSubtitle">Comencemos.</h2>
+              <div class="enter-num"> 
+                <h2 class="enter-num__formSubtitle">Comencemos.</h2>
 
                    <div class="form">
                     <label for="section" class="form__label">Ingrese el número <span>*</span></label>
@@ -101,12 +103,11 @@
                     <option value="3">sumar todos</option>
                     <option value="4">multiplicar cada numero por si mismo</option>
                     </select>
-                    <button id="btn" class="form__button--yelow">Enviar</button>             
+                    <button id="btn" class="form__botton--yelow">Enviar</button>             
                    </div>
                   
-               
-                    <p class="start-num__list">Mi lista de numeros es:</p>
-                    <ul class="start-num__listItem" id="myListNumber"></ul>
+                    <p class="enter-num__list">Mi lista de numeros es:</p>
+                    <ul class="enter-num__listItem" id="myListNumber"></ul>
               <div>      
             </section>
 
@@ -115,19 +116,19 @@
                 <div class="operations">
                    <div class="operations--menMayor " >
                     <h2 class="operations__subTitle">* Organizados de menor a mayor</h2>
-                    <li id="menorMayor"></li>
+                    <li class="operations__textList" id="menorMayor"></li>
                    </div>
                    <div class="operations--mayMen">
                     <h2 class="operations__subTitle">* Organizados de  mayor a menor</h2>
-                    <li id="mayorMenor"></li>
+                    <li class="operations__textList"  id="mayorMenor"></li>
                    </div>
                    <div class="operations--sumar">
                     <h2 class="operations__subTitle">* Suma de todos mis números </h2>
-                    <li id="sumar"></li>
+                    <li class="operations__textList"  id="sumar"></li>
                    </div>  
                    <div class="operations--multiplicar">
                     <h2 class="operations__subTitle">* Multiplicacion por si mismo</h2>
-                    <li id="multiplicar"></li>
+                    <li class="operations__textList"  id="multiplicar"></li>
                    </div>
                 </div>
               
@@ -138,7 +139,7 @@
               <div class=" footer">
                 <div class="footer--name">  
                     <p >finaKtiva</p>
-                    <hr class="footer--hr">
+                    <hr class="footer__hr">
                  </div>
                  <div class="footer-info">
                      <p class="footer-info__tel">Teléfono:</p>

@@ -2,11 +2,14 @@
 let input = document.getElementById('number');
 let select = document.getElementById('section');
 const list = document.getElementById('myListNumber');
+let multiplica = document.getElementById('multiplicar') 
 const botton = document.getElementById('btn');
 
 let listNumbers = [];
 let lisMiltiplica = [];
 let totalMultiplicacion ;
+
+
     
 
 const validateFields = () =>{
@@ -23,6 +26,16 @@ const validateFields = () =>{
 }
 
 const  validateOptions = () => {
+
+    for(let i=0; i< listNumbers.length; i++){
+
+        totalMultiplicacion = listNumbers[i] * listNumbers[i]  
+    }
+    
+    lisMiltiplica.push(totalMultiplicacion); 
+    console.log(lisMiltiplica)
+    console.log('hola')
+    
     if( select.value == 1 ){
        return mayorMenor();
 
@@ -77,26 +90,15 @@ const mayorMenor = () =>{
     })
     }
 
- const sumar = () => {
-     let sumar = document.getElementById('sumar')
+const sumar = () => {
+    let sumar = document.getElementById('sumar')
 
-   sumar.innerHTML = listNumbers.reduce((a, b) => a + b, 0);
+    sumar.innerHTML = listNumbers.reduce((a, b) => a + b, 0);
    
  }
 
  const multilicar = () => {
-     let multiplica = document.getElementById('multiplicar')
-     
-    for(let i=0; i< listNumbers.length; i++){
-
-        totalMultiplicacion = listNumbers[i] * listNumbers[i]  
-    }
-
-    lisMiltiplica.push(totalMultiplicacion); 
-    console.log(lisMiltiplica)
     multiplica.innerHTML = lisMiltiplica 
-
-   
     }  
 
 botton.addEventListener('click', (e) => {
