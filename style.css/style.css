@@ -63,11 +63,11 @@ body{
 /* grid description */
 .description{
     width: 75%;
+    height: 700px;
     margin: auto;
     display: grid;
-    height: 600px;
     grid-template-columns: [inicio] 1fr [linea2] 1fr [final];
-    grid-template-rows: [inicio] 180px[linea2] 50px[linea3] 1fr [final];
+    grid-template-rows: [inicio] 180px[linea2] 70px[linea3] 1fr [final];
 
 }
 
@@ -109,7 +109,7 @@ body{
     margin: auto;
     display: grid;
     grid-template-columns: [inicio] 1fr [linea2] 1fr [final];
-    grid-template-rows: [inicio] 1fr [linea2] 1fr [linea3] 1fr [final];
+    grid-template-rows: [inicio] 10px [linea2] 1fr [linea3] 1fr [final];
 }
 
 .required__subTilte{

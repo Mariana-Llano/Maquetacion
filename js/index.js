@@ -7,10 +7,7 @@ const botton = document.getElementById('btn');
 
 let listNumbers = [];
 let lisMiltiplica = [];
-let totalMultiplicacion ;
-
-
-    
+let totalMultiplicacion ;    
 
 const validateFields = () =>{
     if(input.value === "" || select.value == 0 ){
@@ -35,7 +32,7 @@ const  validateOptions = () => {
     lisMiltiplica.push(totalMultiplicacion); 
     console.log(lisMiltiplica)
     console.log('hola')
-    
+
     if( select.value == 1 ){
        return mayorMenor();
 
